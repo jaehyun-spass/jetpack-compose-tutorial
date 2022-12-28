@@ -51,11 +51,12 @@ fun AppScreen() {
             position = "Android Developer Extraordinaire",
             modifier = Modifier.weight(1f)
         )
-        Column(modifier = Modifier.padding(bottom = 48.dp)) {
+        Column {
             AdditionalInfoRow(Icons.Filled.Phone, stringResource(R.string.phone_number), "+11 (123) 444 555 666")
             AdditionalInfoRow(Icons.Filled.Share, stringResource(R.string.share), "@AndroidDev")
             AdditionalInfoRow(Icons.Filled.Email, stringResource(R.string.email), "jen.doe@android.com")
         }
+        Spacer(Modifier.height(48.dp))
     }
 }
 
